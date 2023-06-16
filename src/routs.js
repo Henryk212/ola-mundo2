@@ -1,4 +1,5 @@
 import  {BrowserRouter, Route, Routes}  from 'react-router-dom';
+import NaoEncontrada from 'paginas/NaoEncontrada';
 import Inicio from './paginas/Inicio';
 import SobreMim from './paginas/SobreMim';
 import Menu from './componentes/Menu';
@@ -21,8 +22,7 @@ export default function AppRouts() {
           <Route path="/sobremim" element={<SobreMim />} />
           <Route path="posts/:id" element={<Post/>} />
         </Route>
-      
-        <Route path="*" element={<div>Página não encontrada </div>} />
+        <Route path="*" element={<NaoEncontrada />} />
       </Routes>
       <Rodape />
     </BrowserRouter>
