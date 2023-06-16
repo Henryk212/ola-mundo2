@@ -4,9 +4,13 @@ import erro404 from './erro_404.png'
 
 export default function NaoEncontrada() {
   return (
+    <>
     <div className={styles.conteudoContainer}>
-        <span className={styles.texto404} >404</span>
-        <h1 className={styles.titulo}>Ops! Página não encontrada</h1>
+        <span className={styles.texto404}>404</span>
+
+        <h1 className={styles.titulo}>
+          Ops! Página não encontrada
+        </h1>
         <p className={styles.paragrafo}>
             Tem certeza de que era iso que você estava procurado ? 
         </p>
@@ -22,5 +26,7 @@ export default function NaoEncontrada() {
         alt="Cachorro de oculos" 
         />
     </div>
+    <div className={styles.espacoEmBranco}></div>
+    </>
   )
 }
